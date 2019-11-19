@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="C:/dbservice/app.js"></script>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl as ctrl">
+         <p>PassengerId : <input type="text" ng-model="passenger"></p>
+         <p>PClass: <input type="text" ng-model="pclass"></p>
+         <button ng-click="ctrl.update();" name="button" type="button">Update Passenger details</button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<style>
+table, th , td  {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="C:/dbservice/app.js"></script>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl as ctrl">
+  <p>Survived: <input type="text" ng-model="survived"></p>
+  <button ng-click="ctrl.retsurvive();" name="button" type="button">Get Survival details</button>
+  <table class="table table-striped table-hover">
+    <tr ng-repeat="p in sur">
+    <td>{{p.passenger}}</td>
+    <td>{{p.survived}}</td>
+    <td>{{p.pclass}}</td>
+    <td>{{p.name}}</td>
+    <td>{{p.sex}}</td>
+    <td>{{p.age}}</td>
+    <td>{{p.sibsp}}</td>
+    <td>{{p.parch}}</td>
+    <td>{{p.ticket}}</td>
+    <td>{{p.fare}}</td>
+    <td>{{p.cabin}}</td>
+    <td>{{p.embarked}}</td>
+    </tr>
+  </table>
+</div>
+
+</body>
+</html>

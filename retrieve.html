@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="C:/dbservice/app.js"></script>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl as ctrl">
+         <p>PassengerId : <input type="text" ng-model="passenger"></p>
+         <button ng-click="ctrl.retrieve();" name="button" type="button">Retrieve Passenger details</button>
+         <button ng-click="ctrl.delete();" name="button" type="button">Delete Passenger details</button>
+ {{ret}}
+</div>
+
+</body>
+</html>
