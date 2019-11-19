@@ -35,7 +35,7 @@ public class TitanicServiceImpl implements TitanicService{
 
         page.getTotalElements();        // get total elements
         page.getTotalPages();           // get total pages
-        return page.getContent();       // get List of Employee
+        return page.getContent();       // get content(list) of titanic
     }
     @Override
     public List<Titanic> findByLikeAndBetweenCriteria(Integer ageStart, Integer ageEnd){
